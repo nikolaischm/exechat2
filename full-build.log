@@ -1,0 +1,165 @@
+Command line invocation:
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/xcodebuild -project CHAT.xcodeproj -target CHAT -configuration Release -sdk iphoneos SYMROOT=/Users/runner/work/exechat2/exechat2/build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= build
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = 
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    SDKROOT = iphoneos18.5
+    SYMROOT = /Users/runner/work/exechat2/exechat2/build
+
+note: Using codesigning identity override: 
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'CHAT' in project 'CHAT' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/exechat2/exechat2/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 5e69c251b03d6cd02204db0f0094d9f6
+Build description path: /Users/runner/work/exechat2/exechat2/build/XCBuildData/5e69c251b03d6cd02204db0f0094d9f6.xcbuilddata
+CreateBuildDirectory /Users/runner/work/exechat2/exechat2/build
+    cd /Users/runner/work/exechat2/exechat2/CHAT.xcodeproj
+    builtin-create-build-directory /Users/runner/work/exechat2/exechat2/build
+
+ClangStatCache /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk /var/folders/nj/vtw8zd2j31d1gdrtntc5y4600000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache
+    cd /Users/runner/work/exechat2/exechat2/CHAT.xcodeproj
+    /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -o /var/folders/nj/vtw8zd2j31d1gdrtntc5y4600000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT-bff6d14fa4726a9053cb13ae3acf672e-VFS-iphoneos/all-product-headers.yaml
+    cd /Users/runner/work/exechat2/exechat2/CHAT.xcodeproj
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT-bff6d14fa4726a9053cb13ae3acf672e-VFS-iphoneos/all-product-headers.yaml
+
+CreateBuildDirectory /Users/runner/work/exechat2/exechat2/build/Release-iphoneos
+    cd /Users/runner/work/exechat2/exechat2/CHAT.xcodeproj
+    builtin-create-build-directory /Users/runner/work/exechat2/exechat2/build/Release-iphoneos
+
+CreateBuildDirectory /Users/runner/work/exechat2/exechat2/build/EagerLinkingTBDs/Release-iphoneos
+    cd /Users/runner/work/exechat2/exechat2/CHAT.xcodeproj
+    builtin-create-build-directory /Users/runner/work/exechat2/exechat2/build/EagerLinkingTBDs/Release-iphoneos
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT_const_extract_protocols.json (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT.SwiftFileList (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT.SwiftConstValuesFileList (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT.LinkFileList (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT-OutputFileMap.json (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT.hmap (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT.hmap
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT.DependencyStaticMetadataFileList (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT.DependencyMetadataFileList (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-project-headers.hmap (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-project-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-own-target-headers.hmap (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-generated-files.hmap (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-generated-files.hmap
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-all-target-headers.hmap (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-all-non-framework-target-headers.hmap (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    write-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-all-non-framework-target-headers.hmap
+
+MkDir /Users/runner/work/exechat2/exechat2/build/Release-iphoneos/CHAT.app (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    /bin/mkdir -p /Users/runner/work/exechat2/exechat2/build/Release-iphoneos/CHAT.app
+
+MkDir /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/assetcatalog_output/unthinned (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    /bin/mkdir -p /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/assetcatalog_output/unthinned
+
+MkDir /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/assetcatalog_output/thinned (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    /bin/mkdir -p /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/assetcatalog_output/thinned
+
+GenerateAssetSymbols /Users/runner/work/exechat2/exechat2/Resources/Assets.xcassets (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool /Users/runner/work/exechat2/exechat2/Resources/Assets.xcassets --compile /Users/runner/work/exechat2/exechat2/build/Release-iphoneos/CHAT.app --output-format human-readable-text --notices --warnings --export-dependency-info /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/assetcatalog_dependencies --output-partial-info-plist /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/assetcatalog_generated_info.plist --app-icon AppIcon --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --minimum-deployment-target 16.0 --platform iphoneos --bundle-identifier de.retrochat.chat --generate-swift-asset-symbol-extensions NO --generate-swift-asset-symbols /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CompileAssetCatalogVariant thinned /Users/runner/work/exechat2/exechat2/build/Release-iphoneos/CHAT.app /Users/runner/work/exechat2/exechat2/Resources/Assets.xcassets (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool /Users/runner/work/exechat2/exechat2/Resources/Assets.xcassets --compile /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --minimum-deployment-target 16.0 --platform iphoneos
+
+SwiftDriver CHAT normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    builtin-SwiftDriver -- /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CHAT -O -whole-module-optimization -enforce-exclusivity\=checked @/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -target arm64-apple-ios16.0 -g -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/exechat2/exechat2/build/Release-iphoneos -F /Users/runner/work/exechat2/exechat2/build/Release-iphoneos -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /var/folders/nj/vtw8zd2j31d1gdrtntc5y4600000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache -output-file-map /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT.swiftmodule -validate-clang-modules-once -clang-build-session-file /var/folders/nj/vtw8zd2j31d1gdrtntc5y4600000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-generated-files.hmap -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-own-target-headers.hmap -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-project-headers.hmap -Xcc -I/Users/runner/work/exechat2/exechat2/build/Release-iphoneos/include -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT-Swift.h -working-directory /Users/runner/work/exechat2/exechat2 -no-emit-module-separately-wmo
+
+SwiftCompile normal arm64 Compiling\ Audio.swift,\ ChatApp.swift,\ ChatModel.swift,\ Mqtt.swift,\ Stickers.swift,\ Views.swift,\ GeneratedAssetSymbols.swift /Users/runner/work/exechat2/exechat2/Sources/Audio.swift /Users/runner/work/exechat2/exechat2/Sources/ChatApp.swift /Users/runner/work/exechat2/exechat2/Sources/ChatModel.swift /Users/runner/work/exechat2/exechat2/Sources/Mqtt.swift /Users/runner/work/exechat2/exechat2/Sources/Stickers.swift /Users/runner/work/exechat2/exechat2/Sources/Views.swift /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'CHAT' from project 'CHAT')
+Failed frontend command:
+/Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/runner/work/exechat2/exechat2/Sources/Audio.swift /Users/runner/work/exechat2/exechat2/Sources/ChatApp.swift /Users/runner/work/exechat2/exechat2/Sources/ChatModel.swift /Users/runner/work/exechat2/exechat2/Sources/Mqtt.swift /Users/runner/work/exechat2/exechat2/Sources/Stickers.swift /Users/runner/work/exechat2/exechat2/Sources/Views.swift /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources/GeneratedAssetSymbols.swift -supplementary-output-file-map /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/supplementaryOutputs-1 -target arm64-apple-ios16.0 -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -I /Users/runner/work/exechat2/exechat2/build/Release-iphoneos -F /Users/runner/work/exechat2/exechat2/build/Release-iphoneos -no-color-diagnostics -g -debug-info-format\=dwarf -dwarf-version\=4 -swift-version 5 -enforce-exclusivity\=checked -O -serialize-debugging-options -const-gather-protocols-file /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /var/folders/nj/vtw8zd2j31d1gdrtntc5y4600000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/runner/work/exechat2/exechat2 -resource-dir /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift -file-compilation-dir /Users/runner/work/exechat2/exechat2 -Xcc -ivfsstatcache -Xcc /var/folders/nj/vtw8zd2j31d1gdrtntc5y4600000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-generated-files.hmap -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-own-target-headers.hmap -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-project-headers.hmap -Xcc -I/Users/runner/work/exechat2/exechat2/build/Release-iphoneos/include -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources -module-name CHAT -frontend-parseable-output -disable-clang-spi -target-sdk-version 18.5 -target-sdk-name iphoneos18.5 -external-plugin-path /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins\#/Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -external-plugin-path /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/lib/swift/host/plugins\#/Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -in-process-plugin-server-path /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -plugin-path /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -enable-default-cmo -num-threads 3 -o /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/Audio.o -o /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/ChatApp.o -o /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/ChatModel.o -o /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/Mqtt.o -o /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/Stickers.o -o /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/Views.o -o /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/GeneratedAssetSymbols.o -index-unit-output-path /CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/Audio.o -index-unit-output-path /CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/ChatApp.o -index-unit-output-path /CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/ChatModel.o -index-unit-output-path /CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/Mqtt.o -index-unit-output-path /CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/Stickers.o -index-unit-output-path /CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/Views.o -index-unit-output-path /CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/GeneratedAssetSymbols.o
+
+CompileSwift normal arm64 (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    
+/Users/runner/work/exechat2/exechat2/Sources/Mqtt.swift:71:39: error: cannot convert value of type 'Int' to expected element type 'UInt8'
+        b.append(contentsOf: [4, 0x02 | 0x04, 0, 30])   // Version 3.1.1, Clean Session + Will, Keep-Alive 30 s
+                                      ^
+
+SwiftDriver\ Compilation CHAT normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CHAT' from project 'CHAT')
+    cd /Users/runner/work/exechat2/exechat2
+    builtin-Swift-Compilation -- /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CHAT -O -whole-module-optimization -enforce-exclusivity\=checked @/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -target arm64-apple-ios16.0 -g -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/exechat2/exechat2/build/Release-iphoneos -F /Users/runner/work/exechat2/exechat2/build/Release-iphoneos -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /var/folders/nj/vtw8zd2j31d1gdrtntc5y4600000gn/C/com.apple.DeveloperTools/16.4-16F6/Xcode/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache -output-file-map /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT.swiftmodule -validate-clang-modules-once -clang-build-session-file /var/folders/nj/vtw8zd2j31d1gdrtntc5y4600000gn/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-generated-files.hmap -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-own-target-headers.hmap -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/CHAT-project-headers.hmap -Xcc -I/Users/runner/work/exechat2/exechat2/build/Release-iphoneos/include -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/Objects-normal/arm64/CHAT-Swift.h -working-directory /Users/runner/work/exechat2/exechat2 -no-emit-module-separately-wmo
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 Compiling\ Audio.swift,\ ChatApp.swift,\ ChatModel.swift,\ Mqtt.swift,\ Stickers.swift,\ Views.swift,\ GeneratedAssetSymbols.swift /Users/runner/work/exechat2/exechat2/Sources/Audio.swift /Users/runner/work/exechat2/exechat2/Sources/ChatApp.swift /Users/runner/work/exechat2/exechat2/Sources/ChatModel.swift /Users/runner/work/exechat2/exechat2/Sources/Mqtt.swift /Users/runner/work/exechat2/exechat2/Sources/Stickers.swift /Users/runner/work/exechat2/exechat2/Sources/Views.swift /Users/runner/work/exechat2/exechat2/build/CHAT.build/Release-iphoneos/CHAT.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'CHAT' from project 'CHAT')
+	CompileSwift normal arm64 (in target 'CHAT' from project 'CHAT')
+(2 failures)

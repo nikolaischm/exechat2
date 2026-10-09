@@ -1,0 +1,2 @@
+** BUILD FAILED **
+/Users/runner/work/exechat2/exechat2/Sources/Mqtt.swift:71:39: error: cannot convert value of type 'Int' to expected element type 'UInt8'
