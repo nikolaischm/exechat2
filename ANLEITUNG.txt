@@ -1,0 +1,75 @@
+CHAT fürs iPhone – so kommt die App auf dein Handy
+====================================================
+
+Ohne App Store braucht man zwei Schritte:
+  A) Die App bauen lassen (macht GitHub kostenlos auf einem Mac in der Cloud)
+  B) Die App mit Sideloadly vom Windows-PC aufs iPhone installieren
+
+
+A) APP BAUEN LASSEN (einmalig, ca. 10 Minuten)
+-----------------------------------------------
+1. Auf https://github.com ein kostenloses Konto anlegen (falls du noch keins hast).
+2. Oben rechts auf "+" -> "New repository".
+   Name z.B. "chat-app", "Private" auswählen, "Create repository".
+3. Auf der neuen Seite auf "uploading an existing file" klicken.
+4. Den GANZEN Inhalt dieser ZIP (entpackt) ins Browserfenster ziehen:
+   die Ordner "Sources", "Resources", ".github" und die Datei "project.yml".
+   Unten auf "Commit changes".
+
+   WICHTIG: Prüf danach, ob der Ordner ".github" mit hochgeladen wurde.
+   Falls nicht (Windows versteckt manchmal Ordner mit Punkt):
+     "Add file" -> "Create new file", als Namen genau
+         .github/workflows/build.yml
+     eintippen, den Inhalt der Datei build.yml (liegt in der ZIP ganz oben) hineinkopieren,
+     "Commit changes".
+
+5. Oben auf den Reiter "Actions". Dort läuft jetzt "iPhone-App bauen"
+   (gelber Punkt = läuft, grüner Haken = fertig, dauert ca. 5 Minuten).
+   Falls nichts läuft: links "iPhone-App bauen" anklicken -> "Run workflow".
+6. Wenn der grüne Haken da ist: den Lauf anklicken, ganz unten bei
+   "Artifacts" auf "CHAT-ipa" klicken. Du bekommst eine ZIP mit
+   der Datei CHAT.ipa darin – das ist deine App. Entpacken.
+
+   Roter Haken? Dann den Lauf anklicken, den roten Schritt aufklappen
+   und mir die Fehlermeldung schicken.
+
+
+B) AUFS IPHONE INSTALLIEREN
+---------------------------
+1. Auf dem PC iTunes und iCloud installieren – und zwar die Versionen
+   von der Apple-Webseite, NICHT aus dem Microsoft Store
+   (Links dazu stehen auf https://sideloadly.io).
+2. Sideloadly von https://sideloadly.io herunterladen und installieren.
+3. iPhone per Kabel anschließen, auf dem iPhone "Vertrauen" tippen.
+4. Sideloadly öffnen, CHAT.ipa ins Fenster ziehen, deine Apple-ID
+   eintragen, "Start". (Die Apple-ID wird nur zum Signieren benutzt.)
+5. Auf dem iPhone:
+   - Einstellungen -> Datenschutz & Sicherheit -> Entwicklermodus
+     einschalten (iPhone startet neu).
+   - Einstellungen -> Allgemein -> VPN & Geräteverwaltung ->
+     deine Apple-ID antippen -> "Vertrauen".
+6. Fertig – CHAT ist auf dem Home-Bildschirm.
+
+
+GUT ZU WISSEN
+-------------
+- Mit einer normalen (kostenlosen) Apple-ID läuft die App 7 Tage,
+  danach muss sie neu signiert werden. Sideloadly kann das automatisch
+  machen ("Auto-Refresh"), wenn der PC an ist und das iPhone im selben WLAN.
+  Mit einem bezahlten Apple-Entwicklerkonto (99 $/Jahr) hält sie 1 Jahr.
+- Die App ist im selben Chat wie Chat.exe und chat.html (gleiche Nummer = gleicher Raum).
+- Wenn die App im Hintergrund ist, ist man kurz "weg" und beim Zurückkommen
+  wieder drin – das iPhone erlaubt keine dauerhafte Verbindung im Hintergrund.
+- /sound und Pieptöne spielen auch, wenn der Lautlos-Schalter an ist.
+
+
+HAST DU EINEN MAC?
+------------------
+Dann geht es ohne GitHub und Sideloadly:
+  Terminal:   brew install xcodegen
+              cd <dieser Ordner>
+              xcodegen generate
+              open CHAT.xcodeproj
+  In Xcode: links auf "CHAT" -> "Signing & Capabilities" -> Team = deine
+  Apple-ID, ggf. Bundle Identifier ändern (z.B. de.deinname.chat),
+  iPhone anschließen, oben als Ziel auswählen, auf Play drücken.
