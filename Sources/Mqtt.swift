@@ -68,7 +68,8 @@ final class MqttClient: NSObject, URLSessionWebSocketDelegate {
         guard webSocketTask === task else { return }
         var b: [UInt8] = []
         MqttClient.str(&b, "MQTT")
-        b.append(contentsOf: [4, 0x02 | 0x04, 0, 30])   // Version 3.1.1, Clean Session + Will, Keep-Alive 30 s
+        let flags: UInt8 = 0x02 | 0x04            // Clean Session + Will
+        b.append(contentsOf: [4, flags, 0, 30])   // Version 3.1.1, Keep-Alive 30 s
         MqttClient.str(&b, clientId)
         MqttClient.str(&b, topic)
         b.append(UInt8((will.count >> 8) & 0xFF))
